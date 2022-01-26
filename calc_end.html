@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>계산기</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <div class="type">Rad</div>
+    <input type="text" id="display_result" value="0">
+    <div class="del" onclick="del()">‹</div>
+
+    <div class="etc" onclick="add('(')">(</div>
+    <div class="etc" onclick="add(')')">)</div>
+    <div class="etc" onclick="m_clear()">mc</div>
+    <div class="etc" onclick="m_plus()">m+</div>
+    <div class="etc" onclick="m_minus()">m-</div>
+    <div class="etc" onclick="m_save()">mr</div>
+    <div class="setting" onclick="reset()">AC</div>
+    <div class="setting" onclick="reverse()">±</div>
+    <div class="setting" onclick="percent()">%</div>
+    <div class="calc" onclick="add('/')">÷</div>
+
+    <div class="change" onclick="change()">2nd</div>
+    <div class="etc" onclick="multiple(2)">x²</div>
+    <div class="etc" onclick="multiple(3)">x³</div>
+    <div class="etc" onclick="alert('기능없음')">x^y</div>
+    <div class="etc1" onclick="e_multiple()">e^x</div>
+    <div class="etc1" onclick="ten_multiple()">10^x</div>
+    <div class="number" onclick="add(7)">7</div>
+    <div class="number" onclick="add(8)">8</div>
+    <div class="number" onclick="add(9)">9</div>
+    <div class="calc" onclick="add('*')">×</div>
+
+    <div class="etc" onclick="div_x()">⅟x</div>
+    <div class="etc" onclick="square()">2√x</div>
+    <div class="etc" onclick="alert('기능없음')">3√x</div>
+    <div class="etc" onclick="alert('기능없음')">y√x</div>
+    <div class="etc1" onclick="alert('기능없음')">In</div>
+    <div class="etc1" onclick="alert('기능없음')">log₁₀</div>
+    <div class="number" onclick="add(4)">4</div>
+    <div class="number" onclick="add(5)">5</div>
+    <div class="number" onclick="add(6)">6</div>
+    <div class="calc" onclick="add('-')">-</div>
+
+    <div class="etc" onclick="factorial()">x!</div>
+    <div class="etc1" onclick="addsin(0)">sin</div>
+    <div class="etc1" onclick="addcos(0)">cos</div>
+    <div class="etc1" onclick="addtan(0)">tan</div>
+    <div class="etc" onclick="set(2.71828182845)">e</div>
+    <div class="etc" onclick="alert('기능없음')">EE</div>
+    <div class="number" onclick="add(1)">1</div>
+    <div class="number" onclick="add(2)">2</div>
+    <div class="number" onclick="add(3)">3</div>
+    <div class="calc" onclick="add('+')">+</div>
+
+    <div class="etc" onclick="alert('기능없음')">Deg</div>
+    <div class="etc1" onclick="addsinh(0)">sinh</div>
+    <div class="etc1" onclick="addcosh(0)">cosh</div>
+    <div class="etc1" onclick="addtanh(0)">tanh</div>
+    <div class="etc" onclick="set(3.14159265359)">π</div>
+    <div class="etc" onclick="alert('기능없음')">Rand</div>
+    <div colspan="2" id="wide" class="number" onclick="add(0)">0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="number" onclick="add('.')">.</div>
+    <div class="calc" onclick="calculate()">=</div>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>

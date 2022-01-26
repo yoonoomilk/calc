@@ -1,0 +1,113 @@
+* {
+  -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+body {
+  background-color: black;
+}
+input:focus {
+  outline: none;
+}
+input {
+  width: 548px;
+  height: 20px;
+  font-size: 1.5em;
+  color: white;
+  background-color: black;
+  text-align: right;
+  border: none;
+}
+div {
+  padding: 5px 1em;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 20px;
+}
+div:not(#wide) {
+  width: 35px;
+  height: 20px;
+}
+#wide {
+  width: 105px;
+  height: 20px;
+}
+.type {
+  font-size: 0.5em;
+  color: white;
+}
+.calc {
+  color: white;
+  background-color: orange;
+}
+.setting {
+  color: black;
+  background-color: darkgray;
+  font-weight: bold;
+}
+.del {
+  color: white;
+  background-color: orange;
+}
+.number {
+  color: white;
+  background-color: dimgray;
+}
+.change {
+  color: white;
+  background-color: rgb(35, 35, 35);
+}
+.etc {
+  color: white;
+  background-color: rgb(35,35,35);
+}
+.etc1 {
+  color: white;
+  background-color: rgb(35,35,35);
+}
+.etc2 {
+  color: white;
+  background-color: rgb(35,35,35);
+  display: none;
+}
+@media (orientation: portrait) {
+  .change {display: none;}
+  .etc {display: none;}
+  .etc1 {display: none;}
+  .type {display: none;}
+}
+
+/*데스크탑*/
+* {zoom :1.185;}
+
+/*iPhone 5/SE*/
+@media (device-width: 568px) and (device-height: 320px) {* {zoom: 1.035;}}
+@media (device-width: 320px) and (device-height: 568px) {* {zoom: 1.035;}}
+/*iPhone 6/7/8*/
+@media (device-width: 667px) and (device-height: 375px) {* {zoom: 1.024;}}
+@media (device-width: 375px) and (device-height: 667px) {* {zoom: 1.059;}}
+/*iPhone 6/7/8 Plus*/
+@media (device-width: 736px) and (device-height: 414px) {* {zoom: 1.04;}}
+@media (device-width: 414px) and (device-height: 736px) {* {zoom: 1.078;}}
+/*iPhone X*/
+@media (device-width: 812px) and (device-height: 375px) {* {zoom: 1.059;}}
+@media (device-width: 375px) and (device-height: 812px) {* {zoom: 1.059;}}
+
+/*iPad*/
+@media (device-width: 1024px) and (device-height: 768px) {* {zoom: 1.1;}}
+@media (device-width: 768px) and (device-height: 1024px) {* {zoom: 1.18;}}
+/*iPad Pro*/
+@media (device-width: 1366px) and (device-height: 1024px) {* {zoom: 1.155;}}
+@media (device-width: 1024px) and (device-height: 1366px) {* {zoom: 1.232;}}
+
+/*Galaxy S5*/
+@media (device-width: 640px) and (device-height: 360px) {* {zoom: 1.015;}}
+@media (device-width: 360px) and (device-height: 640px) {* {zoom: 1.05;}}
+/*Galaxy Fold*/
+/*folded*/
+@media (device-width: 653px) and (device-height: 280px) {* {zoom: 1.02;}}
+@media (device-width: 280px) and (device-height: 653px) {* {zoom: 1.015;}}
+/*opened*/
+@media (device-width: 717px) and (device-height: 512px) {* {zoom: 1.02;}}
+@media (device-width: 512px) and (device-height: 717px) {* {zoom: 1.11;}}
